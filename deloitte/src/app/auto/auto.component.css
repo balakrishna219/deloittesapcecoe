@@ -1,0 +1,330 @@
+/* 
+.popup-card { 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 500px;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+} */
+
+
+
+
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #292d31;
+  color: #FDFEFE;
+  width: 300px;
+  padding: 20px;
+  z-index: 3;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.popup-content {
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: #FDFEFE;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+.card {
+  position:absolute;
+  display: none; 
+  z-index: 2;
+  background-color: #292d31;
+  
+  width: 420px;
+  
+  right: 70%;
+  top: 50%;
+  transform: translate(-15%,-50%);
+
+  
+  overflow: hidden;
+  color: #FDFEFE;
+}
+
+.hoverable {
+  position: relative;
+  display: inline-block;
+  /* margin: 0; */
+  z-index: 2;
+  cursor: pointer;
+  
+}
+
+/* Show the corresponding card when the hoverable element is hovered */
+.hoverable[data-category="STASciTechAdvancement"]:hover ~ .card[data-category="STASciTechAdvancement"],
+.hoverable[data-category="Startup"]:hover ~ .card[data-category="Startup"],
+.hoverable[data-category="Policyandregulation"]:hover ~ .card[data-category="Policyandregulation"],
+.hoverable[data-category="Investmentandfunding"]:hover ~ .card[data-category="Investmentandfunding"],
+.hoverable[data-category="Industryandpartnerships"]:hover ~ .card[data-category="Industryandpartnerships"],
+.hoverable[data-category="Competitor"]:hover ~ .card[data-category="Competitor"],
+.hoverable[data-category="Other"]:hover ~ .card[data-category="Other"],
+.hoverable[data-category="Other-event"]:hover ~ .card[data-category="Other-event"] 
+{
+  display: block;
+}
+
+.card .imgg {
+  width: 420px;
+  height: 180px;
+  object-fit: cover;
+}
+
+
+.card h4 ,h6{
+  margin-top: 5px;
+  color: #FDFEFE; /* Ensure text color matches .card */
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+.card .description{
+  color: #fdfefe;
+  font-size: 14px;
+  margin-left: 15px;
+  display: inline-block; /* Ensures each line behaves like a block element */
+  /* text-indent: -1px;  */
+  margin-bottom: 5px; /* Adjust as needed for spacing between lines */
+  /* position: absolute; */
+  width: 400px;
+}
+
+
+.content-divider {
+  border-bottom: 1px solid #ccc; /* Border below the paragraph */
+  margin-top: 10px; /* Adjust as needed to create space between the text and the border */
+ 
+
+}
+
+
+
+
+
+
+
+
+
+/* --------------------- */
+
+
+.popup-card {
+  position: fixed;
+  /* top: 350px; */
+  left: 10px;
+  width: 880px;
+  height: 760px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's on top of other elements */
+  color: #FDFEFE;
+  overflow-y: auto;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  background-color: #292d31;
+  line-height: 1.5;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.col-6 {
+  flex: 0 0 48%; /* Adjust to create space between columns */
+}
+
+.img2 {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.heading1{  
+  text-align: left;  
+  margin: 10px 0; 
+  position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .hover-trigger:hover + .outer-circle-card-CleanEnergy {
+  display: block;
+} */
+
+
+
+
+/* .CleanEnergy p:nth-child(1) {
+  transform: rotate(-47deg);
+ 
+  color: rgb(14, 190, 40);
+  margin-right:49px;
+  margin-top: 300px;
+  margin-left: 400px;
+}
+
+
+.category-content {
+  position: relative;
+}
+
+.outer-circle-hoverable {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.outer-circle-card-CleanEnergy {
+  position: absolute;
+  z-index: 2;
+  background-color: #292d31;
+  width: 400px;
+  color: #fdfefe;
+  display: none; 
+  top: 0;
+  left: 0;
+
+}
+
+.outer-circle-hoverable:hover ~ .outer-circle-card-CleanEnergy {
+  display: block;
+}
+
+.outer-circle-card-CleanEnergy img.imgg {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.outer-circle-card-content {
+  padding: 10px;
+}
+
+.heddings {
+  margin-top: 5px;
+  color: #FDFEFE;
+  margin-left: 15px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.outer-circle-description {
+  color: #fdfefe;
+  font-size: 14px;
+  margin-left: 15px;
+  display: inline-block;
+  margin-bottom: 5px;
+  width: 100%;
+  text-align: left;
+}
+
+.outer-circle-content-divider {
+  border-bottom: 1px solid #ccc;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.horizontal-bar-graph {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.bar {
+  height: 8px;
+  margin: 0 2px;
+  flex: 1;
+  position: relative;
+}
+
+.percentage {
+  font-size: 10px;
+  color: #fff;
+  position: absolute;
+  bottom: -20px;
+}
+
+.technology-label {
+  font-size: 12px;
+  color: #fdfefe;
+  margin-right: auto;
+} */
+
+
+

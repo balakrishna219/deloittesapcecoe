@@ -1,0 +1,101 @@
+
+<!-- <p data-category="STASciTechAdvancement" class="hoverable" (click)="showPopup()">
+    STA Sci Tech<br>Advancement
+  </p>
+    
+ 
+  <div class="popup" *ngIf="isPopupVisible">
+    <div class="popup-content">
+      <button class="close-btn" (click)="closePopup()">X</button>
+      <p>Hello Popup</p>
+      
+    </div>
+  </div>
+  
+<div class="card" data-category="STASciTechAdvancement" *ngIf="!isPopupVisible">
+        <img class="imgg" src="https://brandspace.deloitte.com/downloads/5f088d84ab330/lg_150608180.jpg.jpg" alt="Built Environment Image">
+        <div class="card-content">
+          <h4>Scientific and technological advancement </h4>
+          <span class="description">Qualcomm Announces Support for India’s NavIC Satellite Navigation System L1 signals in Commercial Chipset Platforms</span>
+          <hr class="content-divider">
+          <h6>Detail</h6>
+          <span class="description">Qualcomm Technologies, Inc, in collaboration with the Indian Space Research Organisation (ISRO), today announced support for the new and recently launched L1 signals of India’s navigation..</span>
+        </div>
+      </div> -->
+
+      <p data-category="STASciTechAdvancement" class="hoverable" (click)="showPopup('STASciTechAdvancement')">STA Sci Tech<br>Advancement</p>
+      <div class="popup-card" *ngIf="isVisible && currentPopup === 'STASciTechAdvancement'">
+        <div class="popup-content">
+          <span class="close" (click)="closePopup()">&times;</span>
+          <hr>
+          <div class="row">
+            <div class="col-6">
+              <h6><em>India</em> | <em>7-Dec-23</em></h6>
+              <h5>STA Sci Tech Advancement</h5>
+              <p class="heading1">Qualcomm Announces Support for India’s NavIC Satellite Navigation System L1 signals in Commercial Chipset Platforms</p>
+            </div>
+            <div class="col-6">
+              <img class="img2" src="https://brandspace.deloitte.com/downloads/5f088d84ab330/lg_150608180.jpg.jpg" alt="STA Sci Tech Image" style="width: 100%; height: auto; border-radius: 5px;">
+            </div>
+          </div>
+          <hr>
+          <h6>Detail</h6>
+          <p>Qualcomm Technologies, Inc, in collaboration with the Indian Space Research Organisation (ISRO), today announced support for the new and recently launched L1 signals of India’s navigation satellite system NavIC (Navigation with Indian Constellation) in select chipset platforms across the Company’s upcoming portfolio. The initiative will help further accelerate the adoption of NavIC and enhance the geolocation capabilities and overall robustness of mobile, automotive and the Internet of Things (IoT) solutions in the region – with the backing of engineering talent in India.</p>
+          <hr>
+          <h6>Impact</h6>
+          <p>Additional support for NavIC L1 signals in Select Upcoming Mobile, Automotive and IoT Platforms is poised to deliver superior location-based services to India’s industries and technology ecosystem.</p>
+          <hr>
+          <p><a href="https://www.qualcomm.com/news/releases/2023/12/qualcomm-announces-support-for-india-s-navic-satellite-navigatio" target="_blank">Source</a><span class="glyphicon glyphicon-new-window"></span></p>
+          <br>
+          <p>Contact: Partho Mondal</p>
+        </div>
+      </div>
+      
+
+
+
+
+
+
+
+
+<!-- <p data-category="STASciTechAdvancement" class="hoverable" (click)="togglePopup()">
+    STA Sci Tech<br>Advancement
+  </p>
+  
+  <div class="popup-card" *ngIf="isPopupVisible">
+    <div class="popup-content">
+      <span class="close-btn" (click)="togglePopup()">&times;</span>
+      <h2>Popup Title</h2>
+      <p>This is the content of the popup card.</p>
+    </div>
+  </div> -->
+
+
+
+
+<!-- <div class="category-content CleanEnergy">
+    <p data-category="Bioenergy" class="outer-circle-hoverable">Bioenergy</p>
+  
+    <div class="outer-circle-card-CleanEnergy" data-category="Bioenergy">
+        <img class="imgg" src="https://images.ctfassets.net/66u3yj7bmwj9/38UsTVve8lPXoj13nB53x/a912fa9d6b9a1598202ab797b809c1f1/Aluminium.png" alt="Built Environment Image">
+        <div class="outer-circle-card-content">
+            <h4 class="heddings">Aluminium</h4>
+            <span class="outer-circle-description">Decarbonizing aluminium production involves avoiding or capturing emissions from the smelting process and eliminating emissions from energy use.</span>
+            <hr class="outer-circle-content-divider">
+            <h6 class="heddings">Technology Maturity</h6>
+            <div class="horizontal-bar-graph">
+                <span class="technology-label">Maturity of technologies in this group</span>
+                <div class="bar" style="width: 33%; background-color: rgb(160, 220, 225);">
+                    <span class="percentage">33%</span>
+                </div>
+                <div class="bar" style="width: 67%; background-color: rgb(0, 171, 171);">
+                    <span class="percentage">67%</span>
+                </div>
+            </div>
+            <hr class="outer-circle-content-divider">
+            <h6 class="heddings">Abatement Potential</h6>
+            <span class="outer-circle-description">57 MtCO2e</span>
+        </div>
+    </div>
+</div> -->
